@@ -7,30 +7,36 @@ We will be using Deno runtime to access a JS jupyter kernel since iJavascript Ke
 Follow the following to install 
 
 `cd ~`
+
+
 `curl -fsSL https://deno.land/x/install/install.sh | sh`
+
+
 Select "y" when prompted to add deno to path. 
 
 If you select "n" then run the following:
+
+
 ```
 export DENO_INSTALL="$HOME/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 ```
 
-Ensure you have Jupyter installed: 
+Ensure you have Jupyter installed:  
 `pip3 install jupyterlab`
 
-Install the Deno Jupyter Kernel
-`deno jupyter --unstable --install`
+Install the Deno Jupyter Kernel  
+`deno jupyter --unstable --install`  
 (If this command fails, it should let you know what to change.)
 
-Now install other project dependencies using: 
+Now install other project dependencies using:  
 `npm install`
 
 
 ### Running the kernel and stagehand-test
 
-If using jupyter directly, you can start the server using: 
-`jupyter notebook`
+If using jupyter directly, you can start the server using:  
+`jupyter notebook`  
 This will create a local server and give you the connection to see the notebook in your browser. 
 
 However, the recommended approach is to use Visual Studio Code and their support for notebooks. 
@@ -40,7 +46,7 @@ You should now be able to open and inspect the contents of the notebooks. In the
 
 
 ---
-Once you have the kernel installed and a notebook running please execute the following command:
+Once you have the kernel installed and a notebook running please execute the following command:  
 `source ./launch-browser.sh`
 
 If you haven't downloaded brave, this should prompt you to do so. Execute the same command after installation. 
