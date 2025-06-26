@@ -1,0 +1,42 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+*.tgz
+dist/
+build/
+.env
+
+# Deno
+build/
+public/*.js
+
+# Stagehand (from official repo)
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+screenshot.png
+.DS_STORE
+.cache/
+downloads/
+evals/**/public
+lib/dom/build/
+evals/public
+evals/playground.ts
+tmp/
+eval-summary.json
+pnpm-lock.yaml
+evals/deterministic/tests/BrowserContext/tmp-test.har
+
+# OS/Editor specific (optional, but recommended)
+*.swp
+*.swo
+.idea/
+.vscode/
+Thumbs.db
+.DS_Store
+
+.brave-profile/
