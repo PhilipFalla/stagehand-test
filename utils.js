@@ -182,7 +182,7 @@ export async function askYesNoGPT(description, question, openai) {
   });
 
   const rawAnswer = completion.choices[0].message.content.trim();
-  console.log(`✅ GPT raw answer: "${rawAnswer}"`);
+  console.log(`Answer's Index: "${rawAnswer}"`);
 
   if (rawAnswer === "1") return 1;
   if (rawAnswer === "0") return 0;
